@@ -1,0 +1,94 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.sample.spring</groupId>
+	<artifactId>SampleSpring</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>SampleSpring Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<springframework.version>4.2.0.RELEASE</springframework.version>
+		<jackson.version>2.5.3</jackson.version>
+		<log4j.version>1.2.17</log4j.version>
+		<!-- Audit4j -->
+		<audit4j.version>2.4.0</audit4j.version>
+		<audit4j-spring.version>2.4.0</audit4j-spring.version>
+		<audit4j-db.version>2.4.0</audit4j-db.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${springframework.version}</version>
+		</dependency>
+		<!-- Log4j -->
+
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>apache-log4j-extras</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+		<!-- Log4j -->
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+
+
+		<!-- Audit4j Dependencies -->
+		<dependency>
+			<groupId>org.audit4j</groupId>
+			<artifactId>audit4j-core</artifactId>
+			<version>${audit4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.audit4j</groupId>
+			<artifactId>audit4j-spring</artifactId>
+			<version>${audit4j-spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.audit4j</groupId>
+			<artifactId>audit4j-db</artifactId>
+			<version>${audit4j-db.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>1.8.9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>2.10.1</version>
+		</dependency>
+		<dependency>
+			<groupId>audit4j-mongodb</groupId>
+			<artifactId>audit4j-mongodb</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>SampleSpring</finalName>
+	</build>
+</project>
