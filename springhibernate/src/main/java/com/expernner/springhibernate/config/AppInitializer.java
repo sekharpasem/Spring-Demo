@@ -2,11 +2,6 @@ package com.expernner.springhibernate.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-/***
- * 
- * @author Shekar
- *
- */
 public class AppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
 	@Override

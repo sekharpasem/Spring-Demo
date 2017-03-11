@@ -7,11 +7,7 @@ import org.springframework.context.annotation.ImportResource;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
-/**
- * Configuration
- * 
- * @author Sekhar
- */
+
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = "com.expernner.springhibernate.*")

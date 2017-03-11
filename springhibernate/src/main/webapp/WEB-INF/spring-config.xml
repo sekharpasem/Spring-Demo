@@ -23,7 +23,7 @@
 		<property name="dataSource" ref="dataSource" />
 		<property name="annotatedClasses">
 			<list>
-				<value>com.expernner.springhibernate.model.ConsumerRegistration</value>
+				<value>com.expernner.springhibernate.model.UserRegistration</value>
 			</list>
 		</property>
 		<property name="hibernateProperties">

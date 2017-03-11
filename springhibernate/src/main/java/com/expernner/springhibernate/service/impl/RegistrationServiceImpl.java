@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.expernner.springhibernate.dao.RegistrationDao;
-import com.expernner.springhibernate.model.ConsumerRegistration;
+import com.expernner.springhibernate.model.UserRegistration;
 import com.expernner.springhibernate.service.RegistrationService;
 
 @Service
@@ -17,12 +17,12 @@ public class RegistrationServiceImpl implements RegistrationService {
 	@Autowired
 	RegistrationDao registrationDao;
 	
-	public ConsumerRegistration save(ConsumerRegistration consumerRegistration) {
+	public UserRegistration save(UserRegistration consumerRegistration) {
 
 		return registrationDao.save(consumerRegistration);
 	}
 
-	public List<ConsumerRegistration> getConsumers() {
+	public List<UserRegistration> getConsumers() {
 		
 		return registrationDao.getConsumers();
 	}

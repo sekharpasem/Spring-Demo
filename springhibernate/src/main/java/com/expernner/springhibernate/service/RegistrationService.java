@@ -2,10 +2,10 @@ package com.expernner.springhibernate.service;
 
 import java.util.List;
 
-import com.expernner.springhibernate.model.ConsumerRegistration;
+import com.expernner.springhibernate.model.UserRegistration;
 
 public interface RegistrationService {
-	public ConsumerRegistration save(ConsumerRegistration consumerRegistration);
+	public UserRegistration save(UserRegistration consumerRegistration);
 
-	public List<ConsumerRegistration> getConsumers();
+	public List<UserRegistration> getConsumers();
 }

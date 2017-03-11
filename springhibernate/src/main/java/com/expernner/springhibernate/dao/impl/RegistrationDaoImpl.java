@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.expernner.springhibernate.dao.RegistrationDao;
-import com.expernner.springhibernate.model.ConsumerRegistration;
+import com.expernner.springhibernate.model.UserRegistration;
 
 @Repository
 public class RegistrationDaoImpl implements RegistrationDao {
@@ -17,17 +17,17 @@ public class RegistrationDaoImpl implements RegistrationDao {
 	 SessionFactory sessionFactory;
 
 
-	public ConsumerRegistration save(ConsumerRegistration consumerRegistration) {
+	public UserRegistration save(UserRegistration consumerRegistration) {
 
 		Session session = this.sessionFactory.getCurrentSession();
 		Integer id = (Integer) session.save(consumerRegistration);
-		ConsumerRegistration reg = (ConsumerRegistration) session.get(ConsumerRegistration.class, id);
+		UserRegistration reg = (UserRegistration) session.get(UserRegistration.class, id);
 		return reg;
 	}
 
-	public List<ConsumerRegistration> getConsumers() {
+	public List<UserRegistration> getConsumers() {
 		Session session = this.sessionFactory.getCurrentSession();
-		List<ConsumerRegistration> list = session.createQuery("from ConsumerRegistration").list();
+		List<UserRegistration> list = session.createQuery("from ConsumerRegistration").list();
 		return list;
 	}
 
